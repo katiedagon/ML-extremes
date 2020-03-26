@@ -1,0 +1,15 @@
+#!/bin/bash -l
+#SBATCH --job-name=remap_job_array
+#SBATCH --account=P93300642
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=6:00:00
+#SBATCH --array=1-61
+#SBATCH --output=job_array-%A_%a.out
+
+module add nco
+cd /glade/scratch/jet/katie/daily
+LINE=$(sed -n "$SLURM_ARRAY_TASK_ID"p /glade/scratch/jet/katie/daily/file-list)
+echo $LINE
+OFILE=${LINE%.*}
+ncremap -m /glade/work/nanr/mapfiles/map_ne120_to_0.23x0.31_bilinear.nc -i ./${LINE} -o ${OFILE}.regrid.23x0.31.nc
