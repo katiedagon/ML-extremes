@@ -2,5 +2,5 @@ notebooks/.ipynb_checkpoints
 notebooks/FinalTemperatureFigures_mjm_v2.ipynb
 figures/
 data/
-regridding/from_John/.ipynb_checkpoints/
-regridding/from_Nan/.ipynb_checkpoints/
+regridding/
+scripts/
