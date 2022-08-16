@@ -1,5 +1,4 @@
-notebooks/.ipynb_checkpoints
-figures/
+code/
 data/
-regridding/
-scripts/
+figures/
+notebooks/.ipynb_checkpoints
