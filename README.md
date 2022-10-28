@@ -3,7 +3,7 @@ This repository provides code to investigate machine learning (ML)-based detecti
 
 The code for frontal analysis and frontal precipitation was developed as part of a publication Dagon et al. (2022), which you can find more details below.
 
-Dagon, K., J. Truesdale, J.C. Biard, K.E. Kunkel, G.A. Meehl, and M.J. Molina (2022), Machine learning-based detection of weather fronts and associated extreme precipitation in historical and future climates, Journal of Geophysical Research: Atmospheres, [doi:10.1029/2022JD037038](https://doi.org/10.1029/2022JD037038). 
+Dagon, K., J. Truesdale, J.C. Biard, K.E. Kunkel, G.A. Meehl, and M.J. Molina (2022), Machine learning-based detection of weather fronts and associated extreme precipitation in historical and future climates, Journal of Geophysical Research: Atmospheres, 127, e2022JD037038, [doi:10.1029/2022JD037038](https://doi.org/10.1029/2022JD037038). 
 
 ## Python Environment
 
