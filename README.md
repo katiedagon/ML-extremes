@@ -1,9 +1,9 @@
 # ML-extremes
 This repository provides code to investigate machine learning (ML)-based detection of weather features such as fronts, atmospheric rivers, and tropical cyclones in climate model simulations with the [Community Earth System Model (CESM)](https://github.com/ESCOMP/CESM), and analyze the association of these features with extreme precipitation.
 
-The code for frontal analysis and frontal precipitation was developed as part of the following publication in review:
+The code for frontal analysis and frontal precipitation was developed as part of a publication Dagon et al. (2022), which you can find more details below.
 
-Dagon, K., J.E. Truesdale, J.C. Biard, K.E. Kunkel, G.A. Meehl, M.J. Molina (Under Review), Machine learning-based detection of weather fronts and associated extreme precipitation in historical and future climates. Journal of Geophysical Research: Atmospheres, [doi:10.1002/essoar.10511254.2](https://doi.org/10.1002/essoar.10511254.2). 
+Dagon, K., J. Truesdale, J.C. Biard, K.E. Kunkel, G.A. Meehl, and M.J. Molina (2022), Machine learning-based detection of weather fronts and associated extreme precipitation in historical and future climates, Journal of Geophysical Research: Atmospheres, [doi:10.1029/2022JD037038](https://doi.org/10.1029/2022JD037038). 
 
 ## Python Environment
 
