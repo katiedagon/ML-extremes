@@ -1,6 +1,8 @@
 data/
 figures/
 notebooks/.ipynb_checkpoints
+notebooks/DLFront/.ipynb_checkpoints
+notebooks/Data_Processing_TMQ_KD.ipynb
 notebooks/tking/
 notebooks/jet/
 notebooks/dask-worker.e*
