@@ -7,11 +7,11 @@
 #PBS -m abe
 #PBS -M tking@ucar.edu
 
-
-#module load conda
+# This script can be used to submit batch ncremap scripts, such as those in the example psl_remap_script.
+# Check the status of this script after it is submitted with `qstat -u tking`.
+# Please use your own account after `-A`, and update with your email to get notifications.
+# It is also recommended to update the name of the script and jobname when submitting for other variables.
+ 
 module load nco/4.7.9
-#/ncar/usr/jupyterhub.hpc.ucar.edu/jupyterhub-20220511/condabin/conda activate cgnet
-#conda activate cgnet
-#which conda
 
 sh psl_remap_script
