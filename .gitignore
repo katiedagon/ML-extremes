@@ -1,3 +1,5 @@
+.gitconfig
+.gitattributes
 data/
 figures/
 notebooks/.ipynb_checkpoints
@@ -7,3 +9,4 @@ notebooks/tking/
 notebooks/jet/
 notebooks/dask-worker.e*
 notebooks/dask-worker.o*
+notebooks/wandb/
