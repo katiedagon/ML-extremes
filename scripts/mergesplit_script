@@ -1,0 +1,30 @@
+ncks -A 2000_U850.nc 2000_TMQ.nc
+ncks -A 2000_V850.nc 2000_PSL.nc
+ncks -A 2000_PSL.nc 2000_TMQ.nc
+cdo splitsel,1 2000_TMQ.nc split_files/2000_all_vars_split
+
+ncks -A 2001_U850.nc 2001_TMQ.nc
+ncks -A 2001_V850.nc 2001_PSL.nc
+ncks -A 2001_PSL.nc 2001_TMQ.nc
+cdo splitsel,1 2001_TMQ.nc split_files/2001_all_vars_split
+
+ncks -A 2002_U850.nc 2002_TMQ.nc
+ncks -A 2002_V850.nc 2002_PSL.nc
+ncks -A 2002_PSL.nc 2002_TMQ.nc
+cdo splitsel,1 2002_TMQ.nc split_files/2002_all_vars_split
+
+ncks -A 2003_U850.nc 2003_TMQ.nc
+ncks -A 2003_V850.nc 2003_PSL.nc
+ncks -A 2003_PSL.nc 2003_TMQ.nc
+cdo splitsel,1 2003_TMQ.nc split_files/2003_all_vars_split
+
+ncks -A 2004_U850.nc 2004_TMQ.nc
+ncks -A 2004_V850.nc 2004_PSL.nc
+ncks -A 2004_PSL.nc 2004_TMQ.nc
+cdo splitsel,1 2004_TMQ.nc split_files/2004_all_vars_split
+
+ncks -A 2005_U850.nc 2005_TMQ.nc
+ncks -A 2005_V850.nc 2005_PSL.nc
+ncks -A 2005_PSL.nc 2005_TMQ.nc
+cdo splitsel,1 2005_TMQ.nc split_files/2005_all_vars_split
+
