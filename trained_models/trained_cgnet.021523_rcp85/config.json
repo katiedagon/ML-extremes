@@ -1,0 +1,32 @@
+{
+    "architecture": "cgnet",
+    "seed": 42,
+    "lr": 0.001,
+    "train_batch_size": 16,
+    "pred_batch_size": 16,
+    "epochs": 20,
+    "fields": {
+        "TMQ": {
+            "mean": 33.90128252707296,
+            "std": 22.12236976623535
+        },
+        "U850": {
+            "mean": 1.4433551285578308,
+            "std": 8.459756851196289
+        },
+        "V850": {
+            "mean": 0.08863787224251912,
+            "std": 6.210744857788086
+        },
+        "PSL": {
+            "mean": 101166.41221217444,
+            "std": 1550.23974609375
+        }
+    },
+    "labels": [
+        "Background",
+        "Tropical Cyclone",
+        "Atmospheric River"
+    ],
+    "description": "The basic CGNet model. You can use this config to train your own model, or load it with our trained weights."
+}
