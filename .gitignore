@@ -9,4 +9,6 @@ notebooks/tking/
 notebooks/jet/
 notebooks/dask-worker.e*
 notebooks/dask-worker.o*
+notebooks/PolarARs/dask-worker.e*
+notebooks/PolarARs/dask-worker.o*
 notebooks/wandb/
