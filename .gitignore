@@ -1,5 +1,6 @@
 .gitconfig
 .gitattributes
+.ipynb_checkpoints/
 data/
 figures/
 notebooks/.ipynb_checkpoints
