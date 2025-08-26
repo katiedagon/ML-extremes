@@ -1,0 +1,34 @@
+#!/bin/tcsh
+
+foreach i (*.nc)
+    echo "Processing $i"
+
+    # Skip if final file already exists
+    if (-e ../final/$i) then
+        echo "  Skipping ../final/$i (already exists)"
+        continue
+    endif
+
+    # Step 1: rename lon/lat -> x/y
+    ncrename -d lon,x -d lat,y $i tmp1.nc
+
+    # Step 2: add longitude variable
+    ncap2 -s 'longitude=lon' tmp1.nc tmp2.nc
+    rm tmp1.nc
+
+    # Step 3: drop lon variable
+    ncks -C -x -v lon tmp2.nc tmp3.nc
+    rm tmp2.nc
+
+    # Step 4: rename latitude (in place)
+    ncrename -v lat,latitude tmp3.nc
+
+    # Step 5: rename dims back (in place)
+    ncrename -d x,lon -d y,lat tmp3.nc
+
+    # Step 6: final cleanup -> write to final dir
+    ncks -O -C -x -v lat_bnds,lon_bnds,w_stag,time_bnds tmp3.nc ../final/$i
+    rm tmp3.nc
+
+    echo "  Wrote ../final/$i"
+end
