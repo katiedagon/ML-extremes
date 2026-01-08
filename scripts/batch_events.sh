@@ -1,0 +1,18 @@
+#!/bin/bash -l
+#PBS -N masks
+#PBS -A P93300313
+#PBS -l select=1:ncpus=1:mem=100GB:ngpus=2
+#PBS -l walltime=6:00:00
+#PBS -q casper
+#PBS -m abe
+#PBS -M tking@ucar.edu
+
+# This script can be used to submit batch ncremap scripts, such as those in the example psl_remap_script.
+# Check the status of this script after it is submitted with `qstat -u tking`.
+# Please use your own account after `-A`, and update with your email to get notifications.
+# It is also recommended to update the name of the script and jobname when submitting for other variables.
+
+module load conda
+conda activate lbltorchplus
+
+python create_event_masks_and_analyze.py 

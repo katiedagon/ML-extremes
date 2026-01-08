@@ -1,0 +1,19 @@
+{
+    "architecture": "cgnet",
+    "seed": 42,
+    "lr": 0.001,
+    "train_batch_size": 4,
+    "pred_batch_size": 4,
+    "epochs": 20,
+    "fields": {
+        "pr": {
+            "mean": 0.000033072,
+            "std": 0.00013133
+        }
+    },
+    "labels": [
+        "Background",
+        "Atmospheric_River"
+    ],
+    "description": "The basic CGNet model. You can use this config to train your own model, or load it with our trained weights."
+}
