@@ -1,0 +1,19 @@
+#!/bin/bash -l
+### Job Name
+#PBS -N process_BRCP26C5CN
+### Charging account
+#PBS -A P06010014
+### Request one chunk of resources with 1 CPU and 120 GB of memory
+#PBS -l select=1:ncpus=1:mem=120GB
+### Allow job to run up 6 hrs
+#PBS -l walltime=06:00:00
+### Route the job to the casper queue
+#PBS -q casper
+### Join output and error streams into single file
+#PBS -j oe
+
+export TMPDIR=${SCRATCH}/temp
+mkdir -p ${TMPDIR}
+
+### Run analysis script
+./process_BRCP26C5CN.sh
